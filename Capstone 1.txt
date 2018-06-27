@@ -1,0 +1,61 @@
+Discovery and Ideation
+1. Any Site
+2. E-Commerce Platform
+3. Not E-Commerce
+
+
+Ideation  - research
+
+1. Owner?
+2. Audience?
+3. Features?
+
+>> Users > Admin, Audience
+
+4. Need to display, important to Owner
+5. Things that I am looking for when browsing a website
+
+
+UI and UX
+
+>> Imitation of good templates
+1.Idea
+a. Sketch
+b. Wireframing
+c. Mockups - color pallet, logo
+d. Code
+
+Capstone 1
+
+Home
+Secondary
+Landing
+Product Page
+
+Sketch - 
+
+
+
+---------------------------------------
+
+filenames/folder names
+ - lower case includes extension
+ - delimited by '-' or '_'
+ - capstone 1 folder name:
+	- csp1-brandname/
+	- portfolio/
+
+project versioning and repository management
+ - project is a git repository
+ - branches
+	- prod (deployed version) - final
+	- staging (backup version) - git
+	- dev (daily commits) - local
+ - we will release 2 minor versions
+	- v0.1.0
+	- v0.2.0
+
+
+
+
+ 

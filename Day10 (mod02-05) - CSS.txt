@@ -1,0 +1,74 @@
+CSS - style
+HTML - structure
+
+W3C - sets rules, developed CSS
+
+HTML4 - start of CSS
+
+; {} - important 
+
+property: value;
+
+
+HTML >> you can see error in google dev, red or yellow sign
+
+element {property:value;} - html tags only
+
+# >> ID
+
+
+
+.class_name {}   >> reusable  >> must use than ID
+
+
+ID is priority than a class
+
+
+attr_value >> ex. main id=wrapper >> 
+
+ways of
+external  >> css
+internal >> style
+inline   >> within element
+
+always put in bottom part ung CSS
+
+combinator
+
++   - immediately follows  >> target applies
+¬   - general sibling	
+>	
+whitespace
+
+state -- behaviour
+
+PSeudo-classes
+
+
+
+Specificity >> 
+
+style att > ID > class pseudo > elements
+
+
+specificity value = 122
+
+Developer Portfolio
+Capstone Project
+
+
+git init
+git remote add gitlab [url]
+git status
+git add -A
+git commit -m "Message"
+git push gitlab master
+
+
+
+
+
+
+ 
+
+
