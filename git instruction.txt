@@ -181,11 +181,165 @@ Fast-forward
 Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
 $ subl .
 
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git checkout dev
+Switched to branch 'dev'
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git merge staging
+Updating 37d48d6..69679d0
+Fast-forward
+ assets/css/style.css                               |  93 ++++++++++++-
+ assets/img/Untitled design.jpg                     | Bin 0 -> 452642 bytes
+ assets/img/gallery_page/birthday/bday1.jpg         | Bin 0 -> 3025541 bytes
+ assets/img/gallery_page/birthday/bday2.jpg         | Bin 0 -> 3586782 bytes
+ assets/img/gallery_page/birthday/bday3.jpg         | Bin 0 -> 4561204 bytes
+ assets/img/gallery_page/birthday/bday4.jpg         | Bin 0 -> 3369812 bytes
+ assets/img/gallery_page/debut/debut1.jpg           | Bin 0 -> 116607 bytes
+ assets/img/gallery_page/debut/debut2.jpg           | Bin 0 -> 1784912 bytes
+ assets/img/gallery_page/debut/debut3.jpg           | Bin 0 -> 88993 bytes
+ assets/img/gallery_page/debut/debut4.jpg           | Bin 0 -> 230547 bytes
+ assets/img/gallery_page/wedding/wedding1.jpg       | Bin 0 -> 100382 bytes
+ assets/img/home_page/home_banner.jpg               | Bin 0 -> 94459 bytes
+ assets/img/kf.jpg                                  | Bin 0 -> 383518 bytes
+ .../landing_page.jpg}                              | Bin
+ assets/img/landing_page/landing_page_blur.jpg      | Bin 0 -> 586981 bytes
+ assets/img/landing_page/landing_page_blur1.jpg     | Bin 0 -> 1481378 bytes
+ facilities/facilities.html                         | 145 +++++++++++++++++++++
+ home/home.html                                     | 133 ++++++++++++++-----
+ index.html                                         |  29 ++---
+ 19 files changed, 346 insertions(+), 54 deletions(-)
+ create mode 100644 assets/img/Untitled design.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday1.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday2.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday3.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday4.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut1.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut2.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut3.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut4.jpg
+ create mode 100644 assets/img/gallery_page/wedding/wedding1.jpg
+ create mode 100644 assets/img/home_page/home_banner.jpg
+ create mode 100644 assets/img/kf.jpg
+ rename assets/img/{IMG_4471-small.jpg => landing_page/landing_page.jpg} (100%)
+ create mode 100644 assets/img/landing_page/landing_page_blur.jpg
+ create mode 100644 assets/img/landing_page/landing_page_blur1.jpg
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ subl .
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git add -A
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git status
+On branch dev
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   assets/css/style.css
+        renamed:    assets/img/landing_page/pic3.jpg -> assets/img/facilities_page/pic1.jpg
+        renamed:    assets/img/landing_page/pic2.jpg -> assets/img/facilities_page/pic2.jpg
+        new file:   assets/img/facilities_page/pic3.jpg
+        new file:   assets/img/facilities_page/pic4.jpg
+        new file:   assets/img/facilities_page/pic5.jpg
+        renamed:    assets/img/landing_page/landing_page.jpg -> assets/img/landing_page/landing_page_blur.jpg
+        renamed:    assets/img/landing_page/landing_page_blur.jpg -> assets/img/landing_page/landing_page_blur2.jpg
+        modified:   assets/img/nb.jpg
+        modified:   facilities/facilities.html
+        deleted:    favicon.ico
+        new file:   favicon_1.ico
+        new file:   git instruction.txt
+        modified:   home/home.html
+        modified:   index.html
+
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git commit -m "Update: Home and Facilities Page"
+[dev 6fec028] Update: Home and Facilities Page
+ 15 files changed, 326 insertions(+), 124 deletions(-)
+ rename assets/img/{landing_page/pic3.jpg => facilities_page/pic1.jpg} (100%)
+ rename assets/img/{landing_page => facilities_page}/pic2.jpg (100%)
+ create mode 100644 assets/img/facilities_page/pic3.jpg
+ create mode 100644 assets/img/facilities_page/pic4.jpg
+ create mode 100644 assets/img/facilities_page/pic5.jpg
+ rename assets/img/landing_page/{landing_page.jpg => landing_page_blur.jpg} (100%)
+ rename assets/img/landing_page/{landing_page_blur.jpg => landing_page_blur2.jpg} (100%)
+ rewrite assets/img/nb.jpg (91%)
+ delete mode 100644 favicon.ico
+ create mode 100644 favicon_1.ico
+ create mode 100644 git instruction.txt
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git status
+On branch dev
+nothing to commit, working tree clean
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (dev)
+$ git checkout staging
+Switched to branch 'staging'
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (staging)
+$ git merge dev
+Updating 69679d0..6fec028
+Fast-forward
+ assets/css/style.css                               |  53 +++---
+ .../pic3.jpg => facilities_page/pic1.jpg}          | Bin
+ .../img/{landing_page => facilities_page}/pic2.jpg | Bin
+ assets/img/facilities_page/pic3.jpg                | Bin 0 -> 102324 bytes
+ assets/img/facilities_page/pic4.jpg                | Bin 0 -> 303043 bytes
+ assets/img/facilities_page/pic5.jpg                | Bin 0 -> 11792 bytes
+ assets/img/landing_page/landing_page.jpg           | Bin 1350482 -> 0 bytes
+ assets/img/landing_page/landing_page_blur.jpg      | Bin 586981 -> 1350482 bytes
+ assets/img/landing_page/landing_page_blur2.jpg     | Bin 0 -> 586981 bytes
+ assets/img/nb.jpg                                  | Bin 40688 -> 112559 bytes
+ facilities/facilities.html                         | 124 +++++++------
+ favicon.ico                                        | Bin 1150 -> 0 bytes
+ favicon_1.ico                                      | Bin 0 -> 1150 bytes
+ git instruction.txt                                | 192 +++++++++++++++++++++
+ home/home.html                                     |  75 ++++----
+ index.html                                         |   6 +-
+ 16 files changed, 326 insertions(+), 124 deletions(-)
+ rename assets/img/{landing_page/pic3.jpg => facilities_page/pic1.jpg} (100%)
+ rename assets/img/{landing_page => facilities_page}/pic2.jpg (100%)
+ create mode 100644 assets/img/facilities_page/pic3.jpg
+ create mode 100644 assets/img/facilities_page/pic4.jpg
+ create mode 100644 assets/img/facilities_page/pic5.jpg
+ delete mode 100644 assets/img/landing_page/landing_page.jpg
+ create mode 100644 assets/img/landing_page/landing_page_blur2.jpg
+ delete mode 100644 favicon.ico
+ create mode 100644 favicon_1.ico
+ create mode 100644 git instruction.txt
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (staging)
+$ git status
+On branch staging
+nothing to commit, working tree clean
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (staging)
+$ subl .
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (staging)
+$ git push gitlab staging
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (19/19), 497.42 KiB | 0 bytes/s, done.
+Total 19 (delta 6), reused 0 (delta 0)
+To https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_britanny.git
+   69679d0..6fec028  staging -> staging
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny (staging)
+$
 
 
 
 
 always merge first before working
+
+git commit sa dev
+then go to staging >> type git merge dev
+
 
 dev - to work on
 dev > staging
