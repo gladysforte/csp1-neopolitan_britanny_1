@@ -30,14 +30,21 @@ body {
 }
 
 
+.buttonBG{
+	background: url('./../img/nb.jpg') no-repeat;
+	background-size: 100% 100%;
+	cursor:pointer;
+	border: none;
+}
+
 /* This is for Index.HTML  */
 
 div#landing {
-    width: 100%;
-    height: 100vh;
-    background-image: url('./../img/landing_page/landing_page_blur.jpg');
-    background-size: 100% 100%;
-    position: fixed;
+	width: 100%;
+	height: 100vh;
+	background-image: url('./../img/landing_page/landing_page_blur.jpg');
+	background-size: 100% 100%;
+	position: fixed;
 }
 
 div#landing > div#content {
@@ -49,32 +56,32 @@ div#landing > div#content {
 
 div#landing > div > h1 {
 	font-family: 'Playball', cursive;
-    /*font-size: 100%;*/
-    /*line-height: 130px;*/
-    font-weight: normal;
-    font-style: normal;
-    color: #e9b947;
-    text-shadow: 0 0 3px #f0fa04;
-    /*margin-top: 25%;*/
-    text-align: center;
+	/*font-size: 100%;*/
+	/*line-height: 130px;*/
+	font-weight: normal;
+	font-style: normal;
+	color: #e9b947;
+	text-shadow: 0 0 3px #f0fa04;
+	/*margin-top: 25%;*/
+	text-align: center;
 }
 
 div#landing > div > p {
-    font-family: 'Slabo', serif;
-    /* font-size: 28px; */
-    font-weight: bold;
-    font-style: normal;
-    color: #ffffff;
-    /* width: 40%; */
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+	font-family: 'Slabo', serif;
+	/* font-size: 28px; */
+	font-weight: bold;
+	font-style: normal;
+	color: #ffffff;
+	/* width: 40%; */
+	text-align: center;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 
 div#landing > div > a {
 	margin-left: 20%;
-    margin-right: 20%;
+	margin-right: 20%;
 }
 
 

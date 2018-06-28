@@ -1,0 +1,192 @@
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git checkout master
+Switched to branch 'master'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git  git
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git branch dev
+fatal: A branch named 'dev' already exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git checkout dev
+Switched to branch 'dev'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (dev)
+$ git pull git pull origin master
+fatal: 'git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (dev)
+$ git pull origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (dev)
+$ git pull staging dev
+fatal: 'staging' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (dev)
+$ git checkout master
+Switched to branch 'master'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git pull origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git pull master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git fetch https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_b                    ritanny.git
+remote: Counting objects: 35, done.
+remote: Compressing objects: 100% (29/29), done.
+remote: Total 35 (delta 6), reused 0 (delta 0)
+Unpacking objects: 100% (35/35), done.
+From https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_britanny
+ * branch            HEAD       -> FETCH_HEAD
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ subl .
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git checkout staging
+Switched to branch 'staging'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ subl .
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git checkout master
+Switched to branch 'master'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ subl .
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (master)
+$ git checkout staging
+Switched to branch 'staging'
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git pull gitlab staging
+From https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_britanny
+ * branch            staging    -> FETCH_HEAD
+   37d48d6..69679d0  staging    -> gitlab/staging
+error: Your local changes to the following files would be overwritten by merge:
+        assets/css/style.css
+        home/home.html
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 37d48d6..69679d0
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git reset
+Unstaged changes after reset:
+M       assets/css/style.css
+M       home/home.html
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git pull gitlab staging
+From https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_britanny
+ * branch            staging    -> FETCH_HEAD
+error: Your local changes to the following files would be overwritten by merge:
+        assets/css/style.css
+        home/home.html
+Please commit your changes or stash them before you merge.
+Aborting
+Updating 37d48d6..69679d0
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git stash
+Saved working directory and index state WIP on staging: 37d48d6 Caps1 : Navigati                    on Setup
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ git pull gitlab staging
+From https://gitlab.com/tuitt/students/b5nc/gladysforte/csp1-neopolitan_britanny
+ * branch            staging    -> FETCH_HEAD
+Updating 37d48d6..69679d0
+Fast-forward
+ assets/css/style.css                               |  93 ++++++++++++-
+ assets/img/Untitled design.jpg                     | Bin 0 -> 452642 bytes
+ assets/img/gallery_page/birthday/bday1.jpg         | Bin 0 -> 3025541 bytes
+ assets/img/gallery_page/birthday/bday2.jpg         | Bin 0 -> 3586782 bytes
+ assets/img/gallery_page/birthday/bday3.jpg         | Bin 0 -> 4561204 bytes
+ assets/img/gallery_page/birthday/bday4.jpg         | Bin 0 -> 3369812 bytes
+ assets/img/gallery_page/debut/debut1.jpg           | Bin 0 -> 116607 bytes
+ assets/img/gallery_page/debut/debut2.jpg           | Bin 0 -> 1784912 bytes
+ assets/img/gallery_page/debut/debut3.jpg           | Bin 0 -> 88993 bytes
+ assets/img/gallery_page/debut/debut4.jpg           | Bin 0 -> 230547 bytes
+ assets/img/gallery_page/wedding/wedding1.jpg       | Bin 0 -> 100382 bytes
+ assets/img/home_page/home_banner.jpg               | Bin 0 -> 94459 bytes
+ assets/img/kf.jpg                                  | Bin 0 -> 383518 bytes
+ .../landing_page.jpg}                              | Bin
+ assets/img/landing_page/landing_page_blur.jpg      | Bin 0 -> 586981 bytes
+ assets/img/landing_page/landing_page_blur1.jpg     | Bin 0 -> 1481378 bytes
+ facilities/facilities.html                         | 145 +++++++++++++++++++++
+ home/home.html                                     | 133 ++++++++++++++-----
+ index.html                                         |  29 ++---
+ 19 files changed, 346 insertions(+), 54 deletions(-)
+ create mode 100644 assets/img/Untitled design.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday1.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday2.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday3.jpg
+ create mode 100644 assets/img/gallery_page/birthday/bday4.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut1.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut2.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut3.jpg
+ create mode 100644 assets/img/gallery_page/debut/debut4.jpg
+ create mode 100644 assets/img/gallery_page/wedding/wedding1.jpg
+ create mode 100644 assets/img/home_page/home_banner.jpg
+ create mode 100644 assets/img/kf.jpg
+ rename assets/img/{IMG_4471-small.jpg => landing_page/landing_page.jpg} (100%)
+ create mode 100644 assets/img/landing_page/landing_page_blur.jpg
+ create mode 100644 assets/img/landing_page/landing_page_blur1.jpg
+
+Night5@DESKTOP-5BTRBMS MINGW64 ~/Documents/gladys-forte/csp1-neopolitan_britanny                     (staging)
+$ subl .
+
+
+
+
+
+always merge first before working
+
+dev - to work on
+dev > staging
+
