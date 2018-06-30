@@ -12,13 +12,77 @@
 
 /*
 *
-* General Rules  https://codepen.io/wisnust10/pen/mPJwWv
+* General Rules
 *
 */
 
-body {
+
+body, html {
+	height: 100%;
+}
+
+/*
+*
+*  Code for Parallax Effect Background
+*
+*/
+
+.bg-1, .bg-2, .bg-3 {
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.bg-1 {
+	background-image: url('./../img/parallax/bg1.jpg');
+	min-height: 100%;
+	width: 100%;
+
+}
+
+.bg-2 {
+	background-image: url('./../img/parallax/bg2.jpg');
+	min-height: 400px;
 	
 	
+}
+
+.bg-3 {
+	background-image: url('./../img/parallax/bg3.jpg');
+	min-height: 400px;
+
+	
+}
+
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section{
+  text-align:center;
+  padding: 50px 80px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  
+}
+
+.section-light{
+  background-color:#f4f4f4;
+  color:#666;
+}
+
+.section-dark{
+  background-color:#282e34;
+  color:#ddd;
 }
 
 .font1 {
@@ -26,15 +90,7 @@ body {
 }
 
 .font2 {
-	font-family: 'Slabo 27px', serif;
-}
-
-
-.buttonBG{
-	background: url('./../img/nb.jpg') no-repeat;
-	background-size: 100% 100%;
-	cursor:pointer;
-	border: none;
+	font-family: 'Slabo', serif;
 }
 
 /* This is for Index.HTML  */
@@ -62,10 +118,10 @@ div#landing > div > h1 {
 	/*line-height: 130px;*/
 	font-weight: normal;
 	font-style: normal;
-	color: #e9b947;
+	color: #daae4f;
 	text-shadow: 0 0 3px #f0fa04;
 	/*margin-top: 25%;*/
-	text-align: center;
+	
 }
 
 div#landing > div > p {
@@ -90,35 +146,28 @@ div#landing > div > a {
 
 /* This is for home.html */
 
-header#mainHeader {
-	width: 100%;
-	height: 50vh;
-	background-color: red;
-}
 
-.home-bg-image {
-	background-image: url('./../img/home_page/home_banner.jpg');
-	background-repeat: no-repeat;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-}
-
-
-header#mainHeader > h1 {
+header#mainHeader > h3, h1 {
 	font-family: 'Playball', cursive
 	color: white;
 	text-shadow: 0 0 5px #f0fa04;
+
 }
 
-header#mainHeader > nav {
+header#mainHeader > nav > div > ul {
 	font-family: 'Slabo 27px', serif;
 	text-transform: uppercase;
+	color: white;
+	margin-left: 10px;
 }
 
+
+/*
 a {
 	color: white;
 }
+*/
+
 
 a:hover {
 	color: #daae4f;
@@ -134,31 +183,32 @@ main#wrapper > div > div > div > img {
 }
 
 
+
+
+
+
 /* This is for contact */
 
 
 /* Media Query*/
 
-header#mainHeader > h1 {
-     word-wrap: break-word;
-     -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-     -ms-hyphens: auto;
-     -o-hyphens: auto;
-     hyphens: auto;
-}
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-	header#mainHeader > h1 {
+	header#mainHeader > h3 {
         font-size: 14px;
     }
+
+      .pimg1, .pimg2, .pimg3{
+    background-attachment:scroll;
+  }
 }
+
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-	header#mainHeader > h1 {
+	header#mainHeader > h3 {
         font-size: 14px;
     }
 }
