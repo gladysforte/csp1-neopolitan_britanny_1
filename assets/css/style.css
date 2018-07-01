@@ -118,7 +118,7 @@ div#landing > div > h1 {
 	/*line-height: 130px;*/
 	font-weight: normal;
 	font-style: normal;
-	color: #daae4f;
+	/*color: #daae4f;*/
 	text-shadow: 0 0 3px #f0fa04;
 	/*margin-top: 25%;*/
 	
@@ -129,7 +129,7 @@ div#landing > div > p {
 	/* font-size: 28px; */
 	font-weight: bold;
 	font-style: normal;
-	color: #ffffff;
+	/*color: #ffffff;*/
 	/* width: 40%; */
 	text-align: center;
 	margin-left: 20%;
@@ -146,11 +146,17 @@ div#landing > div > a {
 
 /* This is for home.html */
 
+h1 {
+	color: white;
+	font-size: 4rem;
+	text-shadow: 0 0 7px black;
+
+}
 
 header#mainHeader > h3, h1 {
 	font-family: 'Playball', cursive
 	color: white;
-	text-shadow: 0 0 5px #f0fa04;
+	/*text-shadow: 0 0 5px #f0fa04;*/
 
 }
 
@@ -162,28 +168,49 @@ header#mainHeader > nav > div > ul {
 }
 
 
-/*
-a {
-	color: white;
+/* Navbar Style*/
+
+
+nav ul li a {
+  position:relative;
+  z-index: 1;
+  font-weight: bold;
 }
-*/
+nav ul li a:hover {
+  color: white;
+}
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  /*height: 3px;*/
+  content: '.';
+  color: transparent;
+  background: #f3bfe2;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
 
-
-a:hover {
-	color: #daae4f;
+nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
 }
 
 
 /*Main Wrapper*/
 
 
-main#wrapper > div > div > div > img {
+div#featured > div > div > img {
 	width: 100%;
-	height: 200px;
+	height: 25vh;
 }
-
-
-
 
 
 

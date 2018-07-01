@@ -15,7 +15,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Magra|Playball" rel="stylesheet">
 
 	<!-- Imports Font Awesome -->
-	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<!-- imports bootstrap stylesheet -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
@@ -26,56 +26,39 @@
 <body>
 
 	<div class="bg-1">		
-		<h1 class="font1 d-flex justify-content-center ptext">Welcome to Neopolitan Britanny Events Place</h1>
+		<h1 class="font1 d-flex justify-content-center ptext">Welcome to <br>Neopolitan Britanny Events Place</h1>
 	</div>
 	
-	<div class="container-fluid">
-		<div class="row">
-			<header id="mainHeader" class="col-sm-12">
-				
-				<nav class="navbar navbar-fluid navbar-expand-lg fixed-top p-0" style="background-color: #eee8e8db;">
-					<a class="navbar-brand" href="#">
-						<img src="../assets/img/nb.jpg" width="30" height="30" alt="">
-					</a>
 
-					<h3 class="font1 mt-3 mb-3">Neopolitan Britanny Events Place</h3> 
-					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<a class="navbar-brand font1" href="#">
+			<img src="../assets/img/logo.jpg" width="200" height="35" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse w-100 order-3" id="navbarNavDropdown">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../facilities/facilities.html">Facilities</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../feature/feature.html">Featured Events</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../package/package.html">Packages</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../contact/contact.html">Contact Us</a>
+				</li>
 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../facilities/facilities.html">Facilities</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../feature/feature.html">Featured Events</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../package/package.html">Packages</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="../contact/contact.html">Contact Us</a>
-							</li>
-
-						</ul>
-
-					</div>
-				</nav>
-
-			</header> 
-
-			
-
+			</ul>
 		</div>
+	</nav>
 
-
-	</div>
-
-	
 
 	<main id="wrapper" class="bg-2">
 		<div class="container-fluid">
@@ -85,7 +68,7 @@
 
 				<div class="col-sm-12 section">
 
-					<span class="font1 d-flex justify-content-center mb-5 text-justify" style="font-size: 2rem;">About Us</span>
+					<span class="font1 mb-5" style="font-size: 2rem;">About Us</span>
 					<h5 class="font2">Neopolitan Britanny Events Place brings celebrations to the next level, may it be a grand event or an intimate get together. It is the perfect venue for weddings, debuts, birthdays, corporate events, seminars, and more. It is not the typical venue at this side of Manila for it offers different event space options that can cater 30 to 300 guests. It can be styled to your own liking and can be transformed to your dream event. Neopolitan Britanny Events Place boasts an array of different themes that includes well-designed buffet set-ups, modern & classic enterprises, great selection of silverwares, tables and chairs. <br>55 Events Place offers its amenities and features for you and your guests to enjoy. Celebrate your events with us and it will surely be extraordinary.</h5>
 
 				</div>
@@ -99,14 +82,13 @@
 
 	</main> <!-- #wrapper -->
 
-<!-- 	<div class="bg-1">
 
-</div>	 -->
 
-<div class="container-fluid bg-1">
-	<div class="row section section-dark pt-5 pb-3 ptext">
+<div id="featured" class="container-fluid bg-1">
+	<div class="row ml-0 section section-dark pt-5 pb-3 ptext">
 		<div class="col-sm-3">
-			<img src="../assets/img/home_page/home_banner.jpg" class="rounded-circle img-fluid" alt="Cinque Terre"> 
+		
+			<img src="../assets/img/home_page/home_banner.jpg" class="img-thumbnail rounded-circle img-fluid" alt="Cinque Terre"> 
 			<h2>Image</h2>
 			<p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
 		</div>
@@ -128,19 +110,45 @@
 			<h2>Image</h2>
 			<p>The .img-circle class shapes the image to a circle (not available in IE8):</p>            
 		</div>
-
-
 
 	</div> <!-- .row -->
 </div>
 
-<footer id="mainFooter fixed-bottom">
+<!-- Footer -->
+<footer class="page-footer bg-dark font-small">
 
-	<div class="footer-copyright p-3 bg-dark text-white d-flex justify-content-center">
-		<p class="d-flex justify-content-center">© 2018 Copyright Text </p>
+	<!-- Footer Elements -->
+	<div class="container">
+
+		<!-- Grid row-->
+		<div class="row">
+
+			<!-- Grid column -->
+			<div class="col-md-12 py-5">
+				<div class="mb-5 flex-center text-white">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+				</div>
+			</div>
+			<!-- Grid column -->
+
+		</div>
+		<!-- Grid row-->
+
 	</div>
+	<!-- Footer Elements -->
 
-</footer> 
+	<!-- Copyright -->
+	<div class="footer-copyright text-center py-3">© 2018 Copyright:
+		<a href="https://mdbootstrap.com/bootstrap-tutorial/"> MDBootstrap.com</a>
+	</div>
+	<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
 
 
