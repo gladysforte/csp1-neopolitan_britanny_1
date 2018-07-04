@@ -45,7 +45,9 @@ body, html {
 
 .bg-2 {
 	background-image: url('./../img/parallax/bg2.jpg');
-	min-height: 400px;
+	/*min-height: 500px;*/
+	min-height: 100%;
+	width: 100%;
 	
 	
 }
@@ -69,27 +71,29 @@ body, html {
 	top: 50%;
 	width: 100%;
 	text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
+
 
 
 .section{
-  text-align:center;
-  /*padding: 50px 80px;*/
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  
+	text-align:center;
+	/*padding: 5rem 7rem 5rem;*/
+	color: black;
+	/*background-color: rgba(0, 0, 0, 0.5);*/
+
 }
 
 .section-light{
-  background-color: rgba(249, 239, 239, 0.5);
-  color:white;
+	background-color: rgba(255, 255, 255, 0.77);
+	color: black;
 }
 
 .section-dark{
-  background-color:#282e34;
-  color:#ddd;
+	background-color:#282e34;
+	color:#ddd;
+
 }
 
 .font1 {
@@ -112,7 +116,7 @@ div#landing {
 
 div#landing > div#content {
 	position: absolute;
-	margin-top: 15%;
+/*	margin-top: 15%;*/
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -179,36 +183,36 @@ header#mainHeader > nav > div > ul {
 
 
 nav ul li a {
-  position:relative;
-  z-index: 1;
-  font-weight: bold;
+	position:relative;
+	z-index: 1;
+	font-weight: bold;
 }
 nav ul li a:hover {
-  color: white;
+	color: white;
 }
 nav ul li a:after {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
-  width: 100%;
-  /*height: 3px;*/
-  content: '.';
-  color: transparent;
-  background: #f3bfe2;
-  visibility: none;
-  opacity: 0;
-  z-index: -1;
-  transition: .5s;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	/*height: 3px;*/
+	content: '.';
+	color: transparent;
+	background: #f3bfe2;
+	visibility: none;
+	opacity: 0;
+	z-index: -1;
+	transition: .5s;
 }
 
 nav ul li a:hover:after {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
 }
 
 
@@ -247,12 +251,12 @@ nav ul li a:hover:after {
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 	header#mainHeader > h3 {
-        font-size: 14px;
-    }
+		font-size: 14px;
+	}
 
-      .pimg1, .pimg2, .pimg3{
-    background-attachment:scroll;
-  }
+	.pimg1, .pimg2, .pimg3{
+		background-attachment:scroll;
+	}
 }
 
 
@@ -260,8 +264,8 @@ nav ul li a:hover:after {
 @media (min-width: 576px) and (max-width: 767.98px) {
 
 	header#mainHeader > h3 {
-        font-size: 14px;
-    }
+		font-size: 14px;
+	}
 }
 
 // Medium devices (tablets, 768px and up)
