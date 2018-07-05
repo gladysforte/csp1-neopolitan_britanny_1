@@ -85,6 +85,12 @@ body, html {
 
 }
 
+.section-white{
+	background-color: white;
+	color: black;
+}
+
+
 .section-light{
 	background-color: rgba(255, 255, 255, 0.77);
 	color: black;
@@ -116,7 +122,7 @@ div#landing {
 
 div#landing > div#content {
 	position: absolute;
-/*	margin-top: 15%;*/
+	/*	margin-top: 15%;*/
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -257,7 +263,15 @@ nav ul li a:hover:after {
 	.pimg1, .pimg2, .pimg3{
 		background-attachment:scroll;
 	}
+
+
+	iframe {
+		width: 300;
+		height: 300; 
+	}
 }
+
+
 
 
 // Small devices (landscape phones, 576px and up)
@@ -270,15 +284,25 @@ nav ul li a:hover:after {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-
+	iframe {
+		width: 600;
+		height: 450;
+	}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+	iframe {
+		width: 600;
+		height: 450;
+	}
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-
+	iframe {
+		width: 600;
+		height: 450;
+	}
 }
