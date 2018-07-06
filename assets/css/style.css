@@ -117,11 +117,11 @@ div#landing {
 	height: 100vh;
 	background-image: url('./../img/landing_page/landing_page_blur.jpg');
 	background-size: 100% 100%;
-	position: fixed;
+	/*position: fixed;*/
 }
 
 div#landing > div#content {
-	position: absolute;
+	/*position: absolute;*/
 	/*	margin-top: 15%;*/
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -129,15 +129,13 @@ div#landing > div#content {
 
 
 
-div#landing > div > h1 {
+div.cover-container > main > h1 {
 	font-family: 'Playball', cursive;
-	/*font-size: 100%;*/
-	/*line-height: 130px;*/
+	color: white;
 	font-weight: normal;
 	font-style: normal;
-	/*color: #daae4f;*/
 	text-shadow: 0 0 3px #f0fa04;
-	/*margin-top: 25%;*/
+	text-shadow: 0 0 7px black;
 	
 }
 
@@ -163,12 +161,14 @@ div#landing > div > a {
 
 /* This is for home.html */
 
+
 h1 {
 	color: white;
 	font-size: 4rem;
 	text-shadow: 0 0 7px black;
 
 }
+
 
 header#mainHeader > h3, h1 {
 	font-family: 'Playball', cursive
@@ -254,6 +254,29 @@ nav ul li a:hover:after {
 /* Media Query*/
 
 
+/* facilties.html*/
+
+
+.carousel-inner > .carousel-item {
+	height: 100vh;
+}
+
+.carousel-inner > .carousel-item > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	max-height: 800px;
+	width: auto;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
 	header#mainHeader > h3 {
@@ -269,6 +292,14 @@ nav ul li a:hover:after {
 		width: 300;
 		height: 300; 
 	}
+
+	div.cover-container > main > h1 {
+
+		font-size: 2rem;
+
+	}
+
+
 }
 
 
@@ -280,6 +311,13 @@ nav ul li a:hover:after {
 	header#mainHeader > h3 {
 		font-size: 14px;
 	}
+
+	div.cover-container > main > h1 {
+		
+		font-size: 2rem;
+
+	}
+
 }
 
 // Medium devices (tablets, 768px and up)
@@ -288,6 +326,15 @@ nav ul li a:hover:after {
 		width: 600;
 		height: 450;
 	}
+
+	div.cover-container > main > h1 {
+		
+		font-size: 4rem;
+
+	}
+
+
+
 }
 
 // Large devices (desktops, 992px and up)
@@ -297,6 +344,13 @@ nav ul li a:hover:after {
 		width: 600;
 		height: 450;
 	}
+
+	div.cover-container > main > h1 {
+
+		font-size: 4rem;
+	}
+
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -304,5 +358,11 @@ nav ul li a:hover:after {
 	iframe {
 		width: 600;
 		height: 450;
+	}
+
+	div.cover-container > main > h1 {
+
+		font-size: 4rem;
+
 	}
 }

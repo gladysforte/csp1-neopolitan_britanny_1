@@ -1,0 +1,12 @@
+under prod
+
+git tag -a v0.1 -m "First version for deployment"
+
+git push github prod
+
+
+
+merge muna dev and staging
+
+git log >> must be last commit
+
