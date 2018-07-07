@@ -258,7 +258,7 @@ nav ul li a:hover:after {
 
 
 .carousel-inner > .carousel-item {
-	height: 100vh;
+	height: 55vh;
 }
 
 .carousel-inner > .carousel-item > img {
@@ -272,10 +272,7 @@ nav ul li a:hover:after {
 	width: auto;
 }
 
-.carousel-control.left,
-.carousel-control.right {
-	background-image: none;
-}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
@@ -350,7 +347,6 @@ nav ul li a:hover:after {
 		font-size: 4rem;
 	}
 
-
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -365,4 +361,11 @@ nav ul li a:hover:after {
 		font-size: 4rem;
 
 	}
+
+	div.cover-container > main > h1 {
+
+		font-size: 4rem;
+	}
+
+
 }
