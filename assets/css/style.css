@@ -285,14 +285,18 @@ nav ul li a:hover:after {
 	}
 
 
-	iframe {
+/*	iframe {
 		width: 300;
 		height: 300; 
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
 		font-size: 2rem;
+
+	}
+	div#galleryID > div > div > div > div > div > a > img {
+		width: 293px;
 
 	}
 
@@ -315,14 +319,19 @@ nav ul li a:hover:after {
 
 	}
 
+	div#galleryID > div > div > div > div > div > a > img {
+		width: 293px;
+
+	}
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-	iframe {
+/*	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 		
@@ -336,11 +345,11 @@ nav ul li a:hover:after {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+/*
 	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
@@ -351,10 +360,10 @@ nav ul li a:hover:after {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-	iframe {
+/*	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
