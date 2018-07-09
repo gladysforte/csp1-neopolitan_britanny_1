@@ -21,6 +21,7 @@
 
 	<!-- Import Custom Stylesheet -->
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/lightbox.min.css">
 
 </head>
 <body>
@@ -60,157 +61,156 @@
 	</nav>
 
 	<main id="wrapper" class="section-white">
-		<div class="container-fluid">
-			<div class="row">
+		<div class="container">
+			<div class="row" id="galleryID">
 				
-				<div class="nav flex-column nav-pills col-md-2 text-center pl-2 pr-2 mt-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Birthdays</a>
-					<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Company Events</a>
-					<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Debut</a>
-					<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Wedding</a>
+				<div class="nav col-md-12 d-flex justify-content-center pl-2 pr-2 mt-3" id="v-pills-tab" role="tablist" aria-orientation="horizontal">
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Birthdays</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Company Events</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Debut</a>
+					<a class="col-sm-12 col-md-6 col-lg-2 nav-link btn btn-outline-info mr-1 ml-2" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Wedding</a>
 				</div>
-				<div class="tab-content col-md-10 ml-0" id="v-pills-tabContent">
+				<div class="tab-content col-md-12" id="v-pills-tabContent">
 					<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 
 						<div class="row">
 
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday1.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday1.jpg" alt="BDay1">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">	
+									<a href="../assets/img/gallery_page/birthday/bday1.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday1.jpg" alt="BDay1"></a>
+								</div>
+
+							</div>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+
+									<a href="../assets/img/gallery_page/birthday/bday2.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday2.jpg" alt="BDay2"></a>
+
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday2.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday2.jpg" alt="BDay2">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+
+									<a href="../assets/img/gallery_page/birthday/bday3.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday3.jpg" alt="BDay3"></a>
+
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday3.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday3.jpg" alt="BDay3">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+
+									<a href="../assets/img/gallery_page/birthday/bday4.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday4.jpg" alt="BDay4"></a>
+
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday4.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday4.jpg" alt="BDay4">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+
+									<a href="../assets/img/gallery_page/birthday/bday1.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday1.jpg" alt="BDay5"></a>
+
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday5.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday5.jpg" alt="BDay5">
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/birthday/bday6.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/birthday/bday6.jpg" alt="BDay6">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+
+									<a href="../assets/img/gallery_page/birthday/bday6.jpg" data-lightbox="mygallery"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/birthday/bday6.jpg" alt="BDay6"></a>
+
 								</div>
 							</div>
 						</div>				
 
 					</div>
 					<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-						
+
 						<div class="row">
 
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company1.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company1.jpg" alt="BDay1">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company1.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company1.jpg" alt="BDay1"></a>
+									
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company2.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company2.jpg" alt="BDay2">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company2.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company2.jpg" alt="BDay2"></a>
+									
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company3.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company3.jpg" alt="BDay3">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company3.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company3.jpg" alt="BDay3"></a>
+									
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company4.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company4.jpg" alt="BDay4">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company4.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company4.jpg" alt="BDay4"></a>
+									
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company5.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company5.jpg" alt="BDay5">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company5.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company5.jpg" alt="BDay5"></a>
+									
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/company/company6.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/company/company6.jpg" alt="BDay6">
-									</a>
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									
+										<a href="../assets/img/gallery_page/company/company6.jpg" data-lightbox="mygallery2"><img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/company/company6.jpg" alt="BDay6"></a>
+									
 								</div>
 							</div>
 						</div>
 
 					</div>
 					<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-						
+
 						<div class="row">
 
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut1.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut1.jpg" alt="BDay1">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut1.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut1.jpg" alt="BDay1">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut2.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut2.jpg" alt="BDay2">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut2.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut2.jpg" alt="BDay2">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut3.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut3.jpg" alt="BDay3">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut3.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut3.jpg" alt="BDay3">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut4.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut4.jpg" alt="BDay4">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut4.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut4.jpg" alt="BDay4">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut5.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut5.jpg" alt="BDay5">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut5.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut5.jpg" alt="BDay5">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/debut/debut6.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/debut/debut6.jpg" alt="BDay6">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/debut/debut6.jpg" data-lightbox="mygallery3">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/debut/debut6.jpg" alt="BDay6">
 									</a>
 								</div>
 							</div>
@@ -218,48 +218,48 @@
 
 					</div>
 					<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-						
+
 						<div class="row">
 
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding1.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding1.jpg" alt="BDay1">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding1.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding1.jpg" alt="BDay1">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding2.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding2.jpg" alt="BDay2">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding2.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding2.jpg" alt="BDay2">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding3.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding3.jpg" alt="BDay3">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding3.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding3.jpg" alt="BDay3">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding4.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding4.jpg" alt="BDay4">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding4.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding4.jpg" alt="BDay4">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding5.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding5.jpg" alt="BDay5">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding5.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding5.jpg" alt="BDay5">
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-6 col-md-6 col-lg-4">
-								<div class="thumbnail mt-3 mb-3">
-									<a class="lightbox" href="../assets/img/gallery_page/wedding/wedding6.jpg">
-										<img style="width: 300px; height: 200px;" src="../assets/img/gallery_page/wedding/wedding6.jpg" alt="BDay6">
+							<div class="col-sm-12 col-md-6 col-lg-4">
+								<div class="mt-3 mb-3">
+									<a href="../assets/img/gallery_page/wedding/wedding6.jpg" data-lightbox="mygallery4">
+										<img class="mx-auto" style="width: 300px; height: 200px; display: block;" src="../assets/img/gallery_page/wedding/wedding6.jpg" alt="BDay6">
 									</a>
 								</div>
 							</div>
@@ -267,35 +267,55 @@
 
 					</div>
 				</div>
-				
+
 
 
 			</div>
 		</div>
 
+	
 	</div> <!-- .container -->
 
 </main> <!-- #wrapper -->
 
+
 <footer id="mainFooter" class="container-fluid">
 
-	<div class="footer-copyright bg-dark text-white row">
-		<div class="bd-highlight col-sm-12 text-center">
+	<div class="footer-copyright bg-dark row">
+		<div class="bd-highlight col-sm-12 text-center text-white">
 			<button type="button" class="btn btn-dark mt-2" href="#"><i class="fab fa-facebook text-center" style="font-size: 2rem;"></i></button>
 			<button type="button" class="btn btn-dark mt-2" href="#"><i class="fab fa-twitter-square text-center" style="font-size: 2rem;"></i></button>
 			<button type="button" class="btn btn-dark mt-2" href="#"><i class="fab fa-youtube text-center" style="font-size: 2rem;"></i></i></button>
 			<button type="button" class="btn btn-dark mt-2" href="#"><i class="fab fa-instagram text-center" style="font-size: 2rem;"></i></i></button>
 		</div>
-		<div class="bd-highlight col-sm-12 text-center">
-			<p class="mt-3">© 2018 Copyright Text </p>
+		<div class="bd-highlight col-sm-12 text-center text-white mt-2 mb-3">
+			<span>© 2018 Copyright</span> | <a href="" class="text-white" data-toggle="modal" data-target="#exampleModal">Disclaimer</a>
 		</div>
 
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Disclaimer</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" style="font-color: black;">
+						The contents of the this Web site including text, graphics, images and other material (“Content”) are for educational purposes only. 
+						Photos were downloaded from pexels.com, 55eventsplace.com and random images from google.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
 
 </footer> 
-
-
 
 <!-- imports bootstrap scripts -->
 
@@ -305,7 +325,8 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 <!-- imports custom script -->
-<script src="./assets/js/script.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="../assets/js/lightbox-plus-jquery.min.js"></script>
 
 </body>
 </html>

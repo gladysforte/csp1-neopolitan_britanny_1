@@ -258,7 +258,7 @@ nav ul li a:hover:after {
 
 
 .carousel-inner > .carousel-item {
-	height: 100vh;
+	height: 55vh;
 }
 
 .carousel-inner > .carousel-item > img {
@@ -272,10 +272,7 @@ nav ul li a:hover:after {
 	width: auto;
 }
 
-.carousel-control.left,
-.carousel-control.right {
-	background-image: none;
-}
+
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
@@ -288,14 +285,18 @@ nav ul li a:hover:after {
 	}
 
 
-	iframe {
+/*	iframe {
 		width: 300;
 		height: 300; 
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
 		font-size: 2rem;
+
+	}
+	div#galleryID > div > div > div > div > div > a > img {
+		width: 293px;
 
 	}
 
@@ -318,14 +319,19 @@ nav ul li a:hover:after {
 
 	}
 
+	div#galleryID > div > div > div > div > div > a > img {
+		width: 293px;
+
+	}
+
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
-	iframe {
+/*	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 		
@@ -339,30 +345,36 @@ nav ul li a:hover:after {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
-
+/*
 	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
 		font-size: 4rem;
 	}
-
 
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-	iframe {
+/*	iframe {
 		width: 600;
 		height: 450;
-	}
+	}*/
 
 	div.cover-container > main > h1 {
 
 		font-size: 4rem;
 
 	}
+
+	div.cover-container > main > h1 {
+
+		font-size: 4rem;
+	}
+
+
 }
